@@ -1,4 +1,22 @@
-# Homework-week2
+# Creating a Responsive Portfolio
+
+## Requirements
+<p>
+Needed to create 3 web pages with the following:
+  
+   * A navbar
+
+   * A responsive layout
+
+   * Responsive images
+<p>
+  
+ ## Contents
+ <p>
+  This application is composed with 3 pages, index.html, portfolio.html and contact.html
+  Along with images which have their own associated image folder
+  <p>
+
 
 # Screenshots of uploaded pages in different sizes
 ## Home page
@@ -12,3 +30,15 @@
 ## Contact
 ![image](https://user-images.githubusercontent.com/69156065/91351679-0814b000-e82c-11ea-8f63-cb0b03506f3e.png)
 ![image](https://user-images.githubusercontent.com/69156065/91351719-1c58ad00-e82c-11ea-8bb0-500f8755b90b.png)
+
+## Check it out yourself here:
+<a href="https://ividigal96.github.io/Homework-week2/index.html">My Website</a><hr>
+
+## Built with
+
+* [VScode](https://code.visualstudio.com/) - For all your coding needs
+* [Bootstrap](https://getbootstrap.com/) - For making all of our jobs easier
+
+## Author
+
+* **Issy Vidigal** 
