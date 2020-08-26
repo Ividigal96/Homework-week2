@@ -12,21 +12,26 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <style>
 
-      .navbar-brand {
-        background-color: turquoise;
+
+    .navbar-brand {
+      background-color: turquoise;
         }
 
-      body {
-   background-image: url(bush/bush.png);
-   background-repeat: no-repeat;
-   background-attachment: fixed;
-   background-size: 100% 100%;
+    body {
+      background-image: url(bush/bush.png);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
  }
 
-      .navbar-nav {
-          float: left;
-          padding: 0px 20px;
-      }
+    .container {
+      position: relative;
+      background-color: #ffffff;
+      margin: 50px;
+      padding: 50px;
+      width: 40%; height: 50%;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
     
       .footer {
       position: fixed;
@@ -38,19 +43,31 @@
       color: white;
       text-align: center;
     }
+
+    @media screen and (max-width: 768px) {
+     .container {
+      width: 75%;
+      margin: auto;
+      }
+    }
+    @media screen and (max-width: 425px) {
+      .container {
+        width: 100%;
+        margin: auto;
+        }
+      }
      </style> 
  
 </head>
-<!-- Current issue upon navigating to Contact page nav bar becomes unorganised -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Issy Vidigal</a>
+    <a class="navbar-brand">Issy Vidigal</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="index.html">Home <span</a>
+          <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="Portfolio.html">Portfolio</a>
@@ -63,8 +80,22 @@
   </nav>
 
 <body>
-    <h1>Contact</h1>
-  
+  <form class="container">
+    <h1 class= "border-bottom" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: turquoise; ">Contact</h1>
+    <div class="form-group">
+      <label for="exampleInputYourName">Name</label>
+      <input type="text" class="form-control" id="exampleInputYourName">
+    </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputNumber1">Phone Number</label>
+        <input type="number" class="form-control" id="exampleInputNumber1">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
   
   </body>
 

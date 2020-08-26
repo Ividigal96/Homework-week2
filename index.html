@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 
     <title>Home page</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -13,35 +13,34 @@
    
    <style>
 
-     .navbar-brand {
+
+    .navbar-brand {
         background-color: turquoise;
         }
 
-      .navbar-nav {
-        width: 100%;
-      }
 
-     body {
-  background-image: url(bush/bush.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-}
+    body {
+      background-image: url(bush/bush.png);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+      }
 
     .container {
       background-color: #ffffff;
       margin: 50px;
       padding: 50px;
+      width: 40%;
       font-family: Georgia, 'Times New Roman', Times, serif;
-    }
+      }
 
-    /* Moved img up to style */
+    
     img {
       width: 100px;
       height: 100px; 
       float: left; 
       margin-right: 25px;
-    }
+      }
     
     .footer {
       position: fixed;
@@ -52,7 +51,22 @@
       background-color: black;
       color: white;
       text-align: center;
-    }
+      }
+
+      @media screen and (max-width: 768px) {
+      .container {
+        width: 100%;
+        padding: 5px;
+        margin: auto;
+        }}
+
+
+      @media screen and (max-width: 425px) {
+      .container {
+        width: 100%;
+        padding: 0%;
+        margin: auto;
+        }}
 
     </style> 
 
@@ -84,6 +98,7 @@
     <span class="border">
     <!-- adding container id in order to place white border around it -->
     <section class="container">
+    <!--h1 adding border-bottom for neater layout between h1 and p  -->
     <h1 class= "border-bottom" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: turquoise; ">About Me</h1>
       <br>
        <p>

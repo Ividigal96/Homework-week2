@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -12,18 +12,46 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <style>
 
-      .navbar-brand {
-        background-color: turquoise;
+    .navbar-brand {
+      background-color: turquoise;
         }
 
-      body {
-   background-image: url(bush/bush.png);
-   background-repeat: no-repeat;
-   background-attachment: fixed;
-   background-size: 100% 100%;
- }
+    body {
+      background-image: url(bush/bush.png);
+      background-color: lightblue;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+
+    .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+
+    .container {
+      position: relative;
+      background-color: #ffffff;
+      margin: 50px;
+      padding: 50px;
+      width: 40%; height: 50%;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .column {
+      float: left;
+      width: 50%;
+      padding: 5px;
+}
+
+    .column img {
+      position: relative;
+      margin-top: 8px;
+      width: 100%;
+    }
  
- .footer {
+    .footer {
       position: fixed;
       left: 0;
       bottom: 0;
@@ -33,12 +61,27 @@
       color: white;
       text-align: center;
     }
+
+    @media screen and (max-width: 768px) {
+     .column, .container {
+      width: 100%;
+      margin: auto;
+      padding: 5%;
+      }
+    }
+    @media screen and (max-width: 425px) {
+      .column, .container {
+        width: 100%;
+        margin: auto;
+        padding: 5%;
+        }
+      }
      </style> 
  
 </head>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Issy Vidigal</a>
+    <a class="navbar-brand">Issy Vidigal</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -58,8 +101,32 @@
   </nav>
 
 <body>
-  <h1>Portfolio</h1>
-
+  <section class="container">
+  <h1 class= "border-bottom" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: turquoise; ">Portfolio</h1>
+  <p>
+    <!-- added id column to each img in order to have them appear beside each other -->
+    <div class="row">
+        <div class="column">
+          <img src="yeahboi.jpg" style="width: 100%;" alt="Selfie1"> 
+        </div>
+        <div class="column">
+          <img src="yeahboi2.jpg" style="width: 100%;" alt="Selfie2"> 
+        </div>
+        <div class="column">
+          <img src="yeahboi3.jpg" style="width: 100%;" alt="Selfie3"> 
+        </div>
+        <div class="column">
+          <img src="batman.jpg" style="width: 100%;" alt="Selfie4"> 
+        </div>
+        <div class="column">
+          <img src="batman2.jpg" style="width: 100%;" alt="Selfie5"> 
+        </div>
+        <div class="column">
+          <img src="okay.jpg" style="width: 100%;" alt="Selfie6"> 
+      </div>
+  </div>
+  </p>
+</section>
 
 </body>
 
